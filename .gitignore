@@ -1,0 +1,30 @@
+# Raw Olist dataset - not committed; download separately (see README)
+data/Raw/
+
+# Credentials / local configuration
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs / OS / IDE
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Leftover files from an earlier project attempt (kept locally, not part of this analysis)
+/Untitled.ipynb
+/notebook/
+/exports/
+/reports/
+/data/Raw.ipynb
+/data/cleaned.ipynb
