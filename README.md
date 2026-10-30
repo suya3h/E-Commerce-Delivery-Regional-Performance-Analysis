@@ -18,7 +18,7 @@ Orders that arrive late get much worse reviews:
 
 | Delivery outcome | Avg review score | 1–2★ review share |
 |---|---|---|
-| Early / on time | 4.33 | 8.7% |
+| Early (7+ days) | 4.33 | 8.7% |
 | 4–7 days late | 2.32 | 61.2% |
 | 8–14 days late | 1.75 | 78.0% |
 
@@ -121,16 +121,19 @@ MA (384 orders, 22.7% late, review 4.018) and DF (799 orders, review 4.106).
 
 ## Visual Analysis
 
-The share of low (1–2★) reviews jumps from 8.7% for early/on-time orders to
-61.2% for orders 4–7 days late:
+The share of low (1–2★) reviews jumps from 8.7% for orders delivered 7+ days
+early to 61.2% for orders 4–7 days late:
 
 ![Low ratings become much more common with late delivery](outputs/02_delay_vs_low_review_share.png)
 
-Comparing the priority states with the best-performing eligible reference
-state (RS). Bars are negative because these orders, on average, still arrive
-before the (conservative) estimate — the question is how much earlier:
+All 22 seller states, ordered by average delivery delay (worst at top).
+Orders on average still arrive before Olist's conservative estimates, so
+negative bars mean "delivered earlier" — the comparison is how much earlier
+(or later) each state delivers. State order volumes are shown in brackets;
+AM (3 orders) and PA (8 orders) are tiny samples, which is why the state
+comparison in the README uses a ≥1,000-order threshold:
 
-![Seller-state delivery performance](outputs/03_state_delivery_delay.png)
+![Average delivery delay by seller state (all 22 states)](outputs/03_state_delivery_delay.png)
 
 Also in `outputs/`:
 
